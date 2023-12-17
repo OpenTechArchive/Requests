@@ -20,14 +20,14 @@ body:
     validations:
       required: false
   - type: input
-    id: repository
+    id: repo
     attributes:
       label: Main Repository
       description: What is the URL of the project's main repository?
     validations:
       required: true
   - type: dropdown
-    id: personal
+    id: relation
     attributes:
       label: What is your relation to the project?
       options:
