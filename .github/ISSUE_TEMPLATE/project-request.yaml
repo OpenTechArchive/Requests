@@ -1,0 +1,39 @@
+name: Project Request
+description: Submit a request for a new project to be added to the archive
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit a project request!
+  - type: input
+    id: name
+    attributes:
+      label: Project Name
+      description: What is the name of the project you want to be added?
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Project Website
+      description: What is the URL of the project's website (if applicable)?
+    validations:
+      required: false
+  - type: input
+    id: repository
+    attributes:
+      label: Main Repository
+      description: What is the URL of the project's main repository?
+    validations:
+      required: true
+  - type: dropdown
+    id: personal
+    attributes:
+      label: What is your relation to the project?
+      options:
+        - Owner
+        - Representative
+        - Contributor
+        - User
+    validations:
+      required: true
